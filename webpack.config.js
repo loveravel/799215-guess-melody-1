@@ -9,7 +9,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, `public`),
     compress: false,
-    port: 1338,
+    port: 1339,
   },
   module: {
     rules: [
