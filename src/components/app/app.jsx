@@ -1,6 +1,16 @@
 import React from "react";
-import {WelcomeScreen} from "../welcome-screen/welcome-screen.jsx";
+import PropTypes from "prop-types";
+import WelcomeScreen from "../welcome-screen/welcome-screen.jsx";
 
-export const App = () => {
-  return <WelcomeScreen gameTime={7} numberOfMistakes={4} />;
+const App = (props) => {
+  const {gameTime, numberOfMistakes} = props;
+
+  return <WelcomeScreen gameTime={gameTime} numberOfMistakes={numberOfMistakes} />;
+};
+
+export default App;
+
+App.propTypes = {
+  gameTime: PropTypes.number.isRequired,
+  numberOfMistakes: PropTypes.number.isRequired,
 };
