@@ -1,8 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const WelcomeScreen = (props) => {
-  const {gameTime, numberOfMistakes} = props;
+  const {
+    gameTime,
+    numberOfMistakes,
+  } = props;
 
   return (
     <section className="welcome">
